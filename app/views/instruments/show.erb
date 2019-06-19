@@ -1,0 +1,4 @@
+<h1><%="#{@instrument.name} (#{@instrument.brand})"%></h1>
+<% @instrument.artists.uniq.each do |artist| %>
+<h2><a href="../artists/<%=artist.id%>"><%=artist.name%></a></h2>
+<% end %>

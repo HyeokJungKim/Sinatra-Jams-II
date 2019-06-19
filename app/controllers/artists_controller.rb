@@ -11,6 +11,7 @@ class ArtistsController < ApplicationController
   end
 
   get "/artists/:id" do
+    puts params[:id]
     @artist = Artist.find(params[:id])
     erb :'artists/show'
   end
